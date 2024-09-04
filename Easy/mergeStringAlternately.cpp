@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-
+//3ms 
 char* mergeAlternately(char* word1, char* word2){
     static char merged[1000];
     int i = 0;
