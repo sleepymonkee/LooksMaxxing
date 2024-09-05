@@ -15,7 +15,7 @@ char* mergeAlternately(char* word1, char* word2){
     }
 
     while (i < len1) merged[k++] = word1[i++];
-    while (i <len2) merged[k++] = word2[i++];
+    while (i < len2) merged[k++] = word2[i++];
 
     merged[k] = '\0';
 
