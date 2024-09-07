@@ -9,6 +9,7 @@ struct TreeNode{
 struct TreeNode* searchBST(struct TreeNode* root, int val){
     struct TreeNode *curr = root;
 
+    //Always repeats to find the right number within the root and return the whole root
     while(curr){
         if(curr->val == val){
             return curr;

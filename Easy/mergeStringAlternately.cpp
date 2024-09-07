@@ -9,11 +9,13 @@ char* mergeAlternately(char* word1, char* word2){
     int len2 = strlen(word2);
     int minMergeLen = len1<len2? len1 : len2;
 
+    //Merge one by one 
     for(i = 0; i<minMergeLen;i++){
         merged[k++] = word1[i];
         merged[k++] = word2[i];
     }
 
+    //Merge the leftovers
     while (i < len1) merged[k++] = word1[i++];
     while (i < len2) merged[k++] = word2[i++];
 

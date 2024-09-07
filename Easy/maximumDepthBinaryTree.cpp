@@ -7,6 +7,7 @@ struct TreeNode{
     struct TreeNode *right;
 };
 
+//fmax automatically finds the max depth
 int maxDepth(struct TreeNode* root){
     if(root == NULL){
         return 0;

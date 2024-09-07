@@ -12,12 +12,14 @@ int guess(int num);
  */
 
 int guessNumber(int n){
+    //If the guess is right
     if(guess(n) == 0){return n;}; 
     int l = 1;
     int r = n;
     int m = l+(r-l)/2;
     int res = 0;
 
+    //Keep on dividing until finds the right one
     while(true){
         m = l+(r-l)/2;
         res = guess(m);

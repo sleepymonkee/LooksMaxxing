@@ -4,6 +4,7 @@ int isPalindrome(char str[]){
     int l = 0;
     int r = strlen(str)-1;
 
+    //Check from both front and the back
     while(l<r){
         if(str[l] != str[r]){
             return 0;
